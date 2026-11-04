@@ -3,31 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello AI World</title>
+  <title>Hello World | Little Sprout</title>
   <style>
     * { box-sizing: border-box; }
-    body {
-      min-height: 100vh;
-      margin: 0;
-      display: grid;
-      place-items: center;
-      background: #faf9f6;
-      color: #343a40;
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-    }
-    h1 {
-      margin: 0;
-      padding: 2rem;
-      font-size: clamp(2.5rem, 8vw, 5rem);
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      text-align: center;
-    }
+    body { min-height: 100vh; margin: 0; background: #faf9f6; color: #343a40; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    nav { display:flex; justify-content:center; flex-wrap:wrap; gap:.5rem; padding:1rem; background:#f2eee8; }
+    nav a { color:#4e5962; text-decoration:none; font-weight:650; padding:.65rem 1rem; border-radius:999px; }
+    nav a:hover, nav a:focus-visible { background:#fff; outline:2px solid #c8d5cb; }
+    main { min-height:calc(100vh - 68px); display:grid; place-items:center; padding:2rem; }
+    h1 { margin:0; font-size:clamp(2.5rem, 8vw, 5rem); font-weight:800; letter-spacing:-.04em; text-align:center; }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Hello, world!</h1>
-  </main>
+  <nav aria-label="Main navigation">
+    <a href="hello-world.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a><a href="cart.html">Cart</a>
+  </nav>
+  <main><h1>Hello, world!</h1></main>
 </body>
 </html>
